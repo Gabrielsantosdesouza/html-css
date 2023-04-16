@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <H1>Imagem dinâmica</H1>  
+ <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p> 
+
+ <picture>
+    <source media="(max-width: 750px)" srcset="imagens/fotop.png.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/fotom.png.png" type="image/png">
+    <img src="imagens/fotog.png.png" alt="imagem flexível">
+ </picture>
+
+ <p>Nessa técnica foi utilizada a tag PICTURE e  dentro dela foi adiconada a primeira imagem utilizando a tag IMG e para as outras imagens foram utilizadas as tags SOURCE-MEDIA-TYPE</p>
+ <p>lembrando que as imagens precisam ser adicionadas da menor para a maior ou da maior para a menor</p>
+ <h1>Reproduzindo áudios</h1>
+ <p>Vamos aprnder a reproduzir áudio em HTML5.</p>
+
+ <audio src="midia/soulicious - Dyalla.mp3"autoplay controls loop></audio>
+
+<p>Uma das maneiras é esta representada acima que está sendo utilizanda a tag AUDIO e os parâmetros CONTROLS e AUTOPLAY </p>
+
+<audio  preload="metadata"autoplay controls loop>
+    <source src="midia/soulicious - Dyalla.mp3" type="audio/mpeg">
+    <source src="midia/soulicious - Dyalla.ogg" type="audio/ogg">
+    <source src="midia/soulicious - Dyalla.wav" type="audio/wav">
+</audio>
+<p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/soulicious - Dyalla.mp3">Clique aqui para baixar o arquivoMP3</a></p>
+<P>para adicionar o link de download foi utilizado a tag A</P>
+
+<p>Outra forma é utilizando a tag AUDIO e adicionando dentro dela os parâmetros PRELOAD="METADATA" e AUTOPLAY CONTROLS e caso você queira que o ádio repita automaticamente use tbm o paramêtro LOOP, depois adicionar dentro da tag ÁUDIO a tag SOURCE-SRC, no src será adicionado o áudio e no  type o tipo de áudio que pode ser MPEG OGG e WAV</p>
+
+
+</body>
+</html>

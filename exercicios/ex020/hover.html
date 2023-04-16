@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display:block;
+            color: black;
+            background-color: bisque;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o tesxto abaixo</p>
+    <div>passe o mouse aqui
+        <p>pega no meu pau</p>
+    </div>
+    <p>Fim do exemplo</p>
+    
+    <div>passa aqui tambem
+        <p>pega no meu pau de novo</p>
+    </div>
+    <p>fim do exemplo</p>
+
+    <div>tô brincando, agora é sério passa aí
+        <p>otário</p>
+    </div>
+    <h1>HOVER É O BAGULHO DE PASSAR O MOUSE EM CIMA</h1>
+    <a href="pseudoclasses.html">voltar</a>
+    
+</body>
+</html>
