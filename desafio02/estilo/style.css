@@ -1,38 +1,65 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-  
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
 header {
-    background-image: url("");
-}
-
-header h1 {
-    font-family: 'Sigmar', cursive;
+    background-color: black;
     color: white;
-    padding-top: 20px;
-    font-size: 60px;
+    text-align: center;
 }
 
-header p {
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    font-weight: bolder;
 }
 
-header p > a {
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(70, 70, 70);
+}
+
+section.imagem {
+    background-color: rgb(65, 65, 65);
     color: white;
-    text-decoration: none;
 }
 
-main p {
-    font-family: 'Sriracha', cursive;
+section.imagem > p {
     width: 400px;
-    margin: 50px;
-    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
